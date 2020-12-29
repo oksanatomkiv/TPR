@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lab3</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+		
+
+	</head>
+	<body>
+		<div id="page">
+			<div id="info">
+				<div class="title">
+					Программа максимизации (минимизации) функции
+				</div>
+				<div class="right">
+					Made by Tod<br />
+					<a href="http://tj-s.ru/tod/">http://tj-s.ru/tod/</a>
+				</div>
+				<a href="#" class="example">Показать пример ▼</a>
+				<div class="left">
+					Введите, например следующие данные:
+					min F = 2x<sub>1</sub>+5x<sub>2</sub>+3x<sub>3</sub>+8x<sub>4</sub><br /><br />
+					
+					Ограничивающие условия:<br /><br />
+
+					3x<sub>1</sub>+6x<sub>2</sub>-4x<sub>3</sub>+x<sub>4</sub> ≤ 12<br />
+					4x<sub>1</sub>-13x<sub>2</sub>+10x<sub>3</sub>+5x<sub>4</sub> ≥ 6<br />
+					3x<sub>1</sub>+7x<sub>2</sub>+x<sub>3</sub>≥1<br />
+				</div>
+				
+			</div>
+			<div class="uravnenie virazhenie">
+				<span class="right_side">
+				<select name="type_of_work">
+					<option value="1">min</option>
+					<option value="-1">max</option>
+				</select>	
+				F= </span>
+				<span class="left_side">
+					<input type="text" value ="0" />X1+
+					<input type="text" value ="0" />X2
+				</span>
+				<span class="right_side">
+					<a href="#" class="add_x">+</a>
+				</span>
+			</div>
+
+			<div id="ogranichenie_block">
+				<div class="ogranichenie virazhenie">
+					<span class="left_side">
+						<input type="text" value ="0" />X1+
+						<input type="text" value ="0" />X2
+					</span>
+					<span class="right_side">
+						<a href="#" class="add_x">+</a>
+						<select>
+							<option value="1">≤</option>
+							<option value="-1">≥</option>
+						</select>	
+						<input type="text" value ="0" />
+					</span>
+				</div>
+				<div class="ogranichenie virazhenie">
+					<span class="left_side">
+						<input type="text" value ="0" />X1+
+						<input type="text" value ="0" />X2
+					</span>
+					<span class="right_side">
+						<a href="#" class="add_x">+</a>
+						<select>
+							<option value="1">≤</option>
+							<option value="-1">≥</option>
+						</select>	
+						<input type="text" value ="0" />
+					</span>
+				</div>
+			</div>
+			<div class="ogranichenie_add">
+				<a href="#">+ Добавить ограничение</a>
+			</div>
+			<div class="submit">
+				<a href="#">Построить</a>
+			</div>
+			
+			<div id="result">
+			
+			</div>
+			
+	
+			
+		</div>
+
+		<!-- Mady by Tod -->
+	</body>
+</html>	
